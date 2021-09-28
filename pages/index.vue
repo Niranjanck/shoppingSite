@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-app>
     <!-- home menu -->
 
     <div class="mainHome relative bg-cover bg-center">
@@ -70,38 +70,11 @@
         </v-row>
       </v-container>
     </div>
-
-    <!-- footer -->
-
-    <div>
-      <v-footer dark padless>
-        <v-card class="flex" flat tile>
-          <v-card-title>
-            <strong class="subheading"
-              >Get connected with us on social networks!</strong
-            >
-
-            <v-spacer></v-spacer>
-
-            <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
-              <v-icon size="24px">
-                {{ icon }}
-              </v-icon>
-            </v-btn>
-          </v-card-title>
-          <v-divider></v-divider>
-
-          <v-card-text class="py-2 white--text text-center">
-            {{ new Date().getFullYear() }} — <strong>SHOP</strong>
-          </v-card-text>
-        </v-card>
-      </v-footer>
-    </div>
-  </div>
+  </v-app>
 </template>
 <style scoped>
 .showBtn {
-  background-color: rgb(38, 0, 255);
+  background-color: rgb(38, 0, 255) !important;
   color: white;
 }
 p {
@@ -325,7 +298,7 @@ svg text {
 export default {
   data() {
     return {
-      slides: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+      slides: ['1', '2', '3', '4', '5'],
       icons: ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram'],
       items: [
         {
